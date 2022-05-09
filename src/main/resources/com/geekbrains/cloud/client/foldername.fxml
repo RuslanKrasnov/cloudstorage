@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.geekbrains.cloud.client.FolderNameController"
+            prefHeight="100.0" prefWidth="250.0" alignment="CENTER" spacing="10.0">
+
+    <TextField fx:id="newFolderNameField"/>
+    <Button fx:id="createBtn" mnemonicParsing="false" onAction="#createNewFolder" prefHeight="26.0"
+            prefWidth="60.0" text="Создать"/>
+
+</VBox>
