@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.geekbrains.cloud.client.NettyClient">
+    <HBox spacing="10.0">
+        <TextField fx:id="clientPath" editable="false" HBox.hgrow="ALWAYS"/>
+        <Button mnemonicParsing="false" onAction="#upFolder" prefHeight="26.0"
+                prefWidth="60.0" text="вверх"/>
+        <TextField fx:id="serverPath" editable="false" HBox.hgrow="ALWAYS"/>
+        <Button mnemonicParsing="false" onAction="#upFolderServer" prefHeight="26.0"
+                prefWidth="60.0" text="вверх"/>
+    </HBox>
+    <HBox spacing="10.0">
+    <TableView fx:id="clientView" HBox.hgrow="ALWAYS"/>
+    <TableView fx:id="serverView" HBox.hgrow="ALWAYS"/>
+    </HBox>
+    <HBox spacing="10.0">
+        <Button mnemonicParsing="false" onAction="#createFolder" HBox.hgrow="ALWAYS" maxWidth="Infinity" prefWidth="100" text="Новая папка"/>
+        <Button mnemonicParsing="false" onAction="#upload" HBox.hgrow="ALWAYS" maxWidth="Infinity" prefWidth="100" text="Загрузить в хранилище"/>
+        <Button mnemonicParsing="false" onAction="#download" HBox.hgrow="ALWAYS" maxWidth="Infinity" prefWidth="100" text="Скачать из хранилища"/>
+        <Button mnemonicParsing="false" onAction="#delete" HBox.hgrow="ALWAYS" maxWidth="Infinity" prefWidth="100" text="Удалить"/>
+    </HBox>
+</VBox>
